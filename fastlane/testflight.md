@@ -23,19 +23,19 @@ You don't need much!
 1. Create a new empty repository titled `Match-Secrets`
 1. Fork https://github.com/LoopKit/LoopWorkspace into your account.
 1. Create a [new personal access token](https://github.com/settings/tokens/new)
-  * Enter a name for your token. Something like "FastLane Access Token".
-  * 30 days is fine, or you can select longer if you'd like.
-  * Select the `repo` permission scope.
-  * Click "Generate token"
-  * Copy the token and record it. It will be used below as `GH_PAT`
+    * Enter a name for your token. Something like "FastLane Access Token".
+    * 30 days is fine, or you can select longer if you'd like.
+    * Select the `repo` permission scope.
+    * Click "Generate token"
+    * Copy the token and record it. It will be used below as `GH_PAT`
 1. In the forked LoopWorkspace repo, go to Settings -> Secrets -> Actions
 1. For each of the following secrets, tap on "New repository secret", then add the name of the secret, along with the value you recorded for it:
-  * `TEAMID`
-  * `FASTLANE_KEY_ID`
-  * `FASTLANE_ISSUER_ID`
-  * `FASTLANE_KEY`
-  * `GH_PAT`
-  * `MATCH_PASSWORD` - just make up a password for this
+    * `TEAMID`
+    * `FASTLANE_KEY_ID`
+    * `FASTLANE_ISSUER_ID`
+    * `FASTLANE_KEY`
+    * `GH_PAT`
+    * `MATCH_PASSWORD` - just make up a password for this
 
 ## Add Identifiers for Loop App
 
@@ -70,14 +70,14 @@ You don't need much!
 ## Create Loop App in App Store Connect
 
 1. Go to the [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
-  * Select "iOS"
-  * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
-  * Select your primary language
-  * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
-  * SKU can be anything; e.g. "123"
-  * Select "Full Access"
-  * Click Create
-  * You do not need to fill out the next form. That is for submitting to the app store.
+    * Select "iOS"
+    * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
+    * Select your primary language
+    * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
+    * SKU can be anything; e.g. "123"
+    * Select "Full Access"
+    * Click Create
+    * You do not need to fill out the next form. That is for submitting to the app store.
 
 ## Create Building Certficates
 
