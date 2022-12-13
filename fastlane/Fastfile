@@ -157,6 +157,11 @@ platform :ios do
     Spaceship::ConnectAPI::BundleId.create(name: "Loop Watch", identifier: "com.#{TEAMID}.loopkit.Loop.LoopWatch")
     Spaceship::ConnectAPI::BundleId.create(name: "Loop-Intent-Extension", identifier: "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension")
     Spaceship::ConnectAPI::BundleId.create(name: "SmallStatusWidget", identifier: "com.#{TEAMID}.loopkit.Loop.SmallStatusWidget")
+    
+    app_group = "group.com.#{TEAMID}.loopkit.LoopGroup"
+    bundle_id = Spaceship::ConnectAPI::BundleId.find("com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension")
+    bundle_id.create_capability(Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS)
+
 
     match(
       type: "appstore",
