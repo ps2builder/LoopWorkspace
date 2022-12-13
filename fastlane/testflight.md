@@ -98,7 +98,6 @@ You don't need much!
 1. Click "Run Workflow", and tap the green button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
-
 ## Build Loop!
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
