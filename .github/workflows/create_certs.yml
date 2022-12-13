@@ -20,7 +20,7 @@ jobs:
         
       # Create or update certificates for app
       - name: Create Certificates
-        run: fastlane provision
+        run: fastlane certs
         env:
           TEAMID: ${{ secrets.TEAMID }}
           GH_PAT: ${{ secrets.GH_PAT }}

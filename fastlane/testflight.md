@@ -22,7 +22,7 @@ You don't need much!
 ## Setup Github
 1. Create a new empty repository titled `Match-Secrets`
 1. Fork https://github.com/LoopKit/LoopWorkspace into your account.
-1. Create a [new personal access token](https://github.com/settings/tokens/new)
+1. Create a [new personal access token](https://github.com/settings/tokens/new):
     * Enter a name for your token. Something like "FastLane Access Token".
     * 30 days is fine, or you can select longer if you'd like.
     * Select the `repo` permission scope.
