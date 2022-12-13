@@ -37,13 +37,12 @@ You don't need much!
   * `GH_PAT`
   * `MATCH_PASSWORD` - just make up a password for this
 
-## Setup Provisioning for Loop App
+## Add Provisioning for Loop App
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
-1. Select ""
+1. Select "Add Provisioning"
 1. Click "Run Workflow", select your branch, and tap the green button.
-1. Wait, and your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps)
-1. For each phone/person you would like to support Loop on, send an invite to using the TestFlight 
+1. Wait, and you should eventually see a green checkmark indicating the workflow succeeded.
 
 ## Create Loop App in App Store Connect
 
