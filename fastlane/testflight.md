@@ -10,7 +10,7 @@ You don't need much!
 * A paid Apple Developer account. You may be able to use the free version, but that has not been tested.
 
 
-## Apple Developer Steps
+## Generate App Store Connect API Key
 
 1. Sign in to the [Apple developer portal page](https://developer.apple.com/account/resources/certificates/list)
 1. Copy the team id from the upper right of the screen. Record this as your `TEAMID`
@@ -18,23 +18,8 @@ You don't need much!
 1. Record the key id; this will be used for `FASTLANE_KEY_ID`
 1. Record the issuer id; this will be used for `FASTLANE_ISSUER_ID`
 1. Download the API key itself, and open it in a text editor. The contents of this file will be used for `FASTLANE_KEY`
-1. At the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/bundleId/add/bundle) page, add a new app identifier.
-  * Description: Loop
-  * The Bundle ID will be explicit and in the form `com.TEAMID.loopkit.Loop`, where `TEAMID` is your the value you recorded above.
-  * For capabilities, check "App Groups, "HealthKit", "SiriKit", and "Time Sensitive Notifications"
-  * Then click "Continue", and "Register".
-1. Go to the [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and create a New App.
-  * Select "iOS"
-  * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
-  * Select your primary language
-  * Select the Bundle Id you created above.
-  * SKU can be anything; e.g. "123"
-  * Select "Full Access"
-  * Click Create
-  * You do not need to fill out the next form. That is for submitting to the app store.
 
-## GitHub Configuration Steps
-
+## Setup Github
 1. Create a new empty repository titled `Match-Secrets`
 1. Fork https://github.com/LoopKit/LoopWorkspace into your account.
 1. Create a [new personal access token](https://github.com/settings/tokens/new)
@@ -51,6 +36,35 @@ You don't need much!
   * `FASTLANE_KEY`
   * `GH_PAT`
   * `MATCH_PASSWORD` - just make up a password for this
+
+## Setup Provisioning for Loop App
+
+1. Click on the "Actions" tab of your LoopWorkspace repository.
+1. Select ""
+1. Click "Run Workflow", select your branch, and tap the green button.
+1. Wait, and your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps)
+1. For each phone/person you would like to support Loop on, send an invite to using the TestFlight 
+
+## Create Loop App in App Store Connect
+
+1. Go to the [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and create a New App.
+  * Select "iOS"
+  * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
+  * Select your primary language
+  * Select the Bundle Id you created above.
+  * SKU can be anything; e.g. "123"
+  * Select "Full Access"
+  * Click Create
+  * You do not need to fill out the next form. That is for submitting to the app store.
+
+1. At the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/bundleId/add/bundle) page, add a new app identifier.
+  * Description: Loop
+  * The Bundle ID will be explicit and in the form `com.TEAMID.loopkit.Loop`, where `TEAMID` is your the value you recorded above.
+  * For capabilities, check "App Groups, "HealthKit", "SiriKit", and "Time Sensitive Notifications"
+  * Then click "Continue", and "Register".
+
+## GitHub Configuration Steps
+
 
 ## Build Loop!
 
