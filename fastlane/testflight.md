@@ -104,5 +104,8 @@ You don't need much!
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. Select "Build Loop"
 1. Click "Run Workflow", select your branch, and tap the green button.
-1. Wait, and your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps)
-1. For each phone/person you would like to support Loop on, send an invite to using the TestFlight 
+1. You have some time now. Go enjoy a coffee. The build should take about 20-30 minutes.
+1. Your app should eventually appear on [App Store Connect](https://appstoreconnect.apple.com/apps)
+1. For each phone/person you would like to support Loop on
+    * Add them in [Users and Access](https://appstoreconnect.apple.com/access/users) on App Store Connect
+    * Add them to your TestFlight Internal Testing group.
