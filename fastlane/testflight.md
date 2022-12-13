@@ -44,6 +44,29 @@ You don't need much!
 1. Click "Run Workflow", and tap the green button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
+## Create App Group
+
+1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
+1. For Description, use "Loop App Group"
+1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`
+1. Click "Continue" and then "Register"
+
+## Add App Group to Bundle Identifiers
+
+1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
+1. For each of the following identifiers:
+  * Loop
+  * Loop Intent Extension
+  * Loop Status Extension
+  * Small Status Widget
+1. Click on the identifier's name.
+1. On the "App Groups" capabilies, click on the "Configure" button.
+1. Select the "Loop App Group"
+1. Click "Continue".
+1. Click "Save".
+1. Click "Confirm".
+1. Remember to do this for each of the identifiers above.
+
 ## Create Loop App in App Store Connect
 
 1. Go to the [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
@@ -62,13 +85,6 @@ You don't need much!
 1. Select "Create Certificates"
 1. Click "Run Workflow", and tap the green button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
-
-## Create App Group
-
-1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
-1. For Description, use "Loop App Group"
-1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`
-1. Click "Continue" and then "Register"
 
 
 ## Build Loop!

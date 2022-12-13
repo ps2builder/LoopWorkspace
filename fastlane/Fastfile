@@ -193,7 +193,7 @@ platform :ios do
       Spaceship::ConnectAPI::BundleIdCapability::Type::SIRIKIT
     ])
 
-    configure_bundle_id("SmallStatusWidget", "com.#{TEAMID}.loopkit.Loop.SmallStatusWidget", [
+    configure_bundle_id("Small Status Widget", "com.#{TEAMID}.loopkit.Loop.SmallStatusWidget", [
       Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
     ])
     
