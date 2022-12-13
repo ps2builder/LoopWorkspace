@@ -1,4 +1,7 @@
 name: Add Provisioning
+on:
+  workflow_dispatch:
+
 jobs:
   provision:
     runs-on: macos-12
