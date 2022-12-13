@@ -159,6 +159,7 @@ platform :ios do
 
     bundle_id = Spaceship::ConnectAPI::BundleId.find("com.#{TEAMID}.loopkit.Loop.statuswidget") || 
       Spaceship::ConnectAPI::BundleId.create(name: "Status Widget", identifier: "com.#{TEAMID}.loopkit.Loop.statuswidget")
+    bundle_id.create_capability(Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS)
 
     bundle_id = Spaceship::ConnectAPI::BundleId.find("com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension") || 
       Spaceship::ConnectAPI::BundleId.create(name: "WatchKitExtension", identifier: "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension")
@@ -168,6 +169,7 @@ platform :ios do
     
     bundle_id = Spaceship::ConnectAPI::BundleId.find("com.#{TEAMID}.loopkit.Loop.SmallStatusWidget") || 
       Spaceship::ConnectAPI::BundleId.create(name: "SmallStatusWidget", identifier: "com.#{TEAMID}.loopkit.Loop.SmallStatusWidget")    
+    bundle_id.create_capability(Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS)
 
     match(
       type: "appstore",
