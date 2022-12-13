@@ -55,10 +55,10 @@ You don't need much!
 
 1. Go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/list) on the apple developer site.
 1. For each of the following identifiers:
-  * Loop
-  * Loop Intent Extension
-  * Loop Status Extension
-  * Small Status Widget
+    * Loop
+    * Loop Intent Extension
+    * Loop Status Extension
+    * Small Status Widget
 1. Click on the identifier's name.
 1. On the "App Groups" capabilies, click on the "Configure" button.
 1. Select the "Loop App Group"
