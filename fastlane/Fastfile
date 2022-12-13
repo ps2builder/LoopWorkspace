@@ -154,7 +154,7 @@ platform :ios do
   end
 
   desc "Provision Identifiers and Certificates"
-  lane :provision do
+  lane :identifiers do
     setup_ci if ENV['CI']
     ENV["MATCH_READONLY"] = false.to_s
     

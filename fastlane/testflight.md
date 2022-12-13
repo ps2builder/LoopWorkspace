@@ -37,10 +37,10 @@ You don't need much!
   * `GH_PAT`
   * `MATCH_PASSWORD` - just make up a password for this
 
-## Add Provisioning for Loop App
+## Add Identifiers for Loop App
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
-1. Select "Add Provisioning"
+1. Select "Add Identifiers"
 1. Click "Run Workflow", and tap the green button.
 1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
@@ -65,7 +65,10 @@ You don't need much!
 
 ## Create App Group
 
-1. At the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/bundleId/add/bundle) page, add a new app identifier.
+1. Go to [Register an App Group](https://developer.apple.com/account/resources/identifiers/applicationGroup/add/) on the apple developer site.
+1. For Description, use "Loop App Group"
+1. For Identifier, enter "group.com.TEAMID.loopkit.LoopGroup", subsituting your team id for `TEAMID`
+1. Click "Continue" and then "Register"
 
 
 ## Build Loop!
