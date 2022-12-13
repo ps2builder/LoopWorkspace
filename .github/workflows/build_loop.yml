@@ -1,5 +1,4 @@
 name: Build Loop
-
 jobs:
   build:
     runs-on: macos-12

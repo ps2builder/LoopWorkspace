@@ -1,5 +1,4 @@
 name: Add Provisioning
-
 jobs:
   provision:
     runs-on: macos-12
