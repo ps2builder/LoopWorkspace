@@ -2,12 +2,15 @@
 
 These instructions allow you to build Loop without having access to a Mac. They also allow you to easily install Loop on phones that are not connected to your computer. So you can send builds and updates to those you care for easily, or have an easy to access backup if you run Loop for yourself. You do not need to worry about correct Xcode/Mac versions either. An app built using this method can easily be deployed to newer versions of iOS, as soon as they are available.
 
+The setup steps are somewhat involved, but nearly all are one time steps. Subsequent builds are trivial.
+
 ## Prerequisites.
 
 You don't need much!
 
 * A github account. The free level comes with plenty of storage and free compute time to build loop, multiple times a week, if you wanted to.
 * A paid Apple Developer account. You may be able to use the free version, but that has not been tested.
+* Some time. Set aside a couple of hours to perform the setup.
 
 
 ## Generate App Store Connect API Key
