@@ -41,28 +41,31 @@ You don't need much!
 
 1. Click on the "Actions" tab of your LoopWorkspace repository.
 1. Select "Add Provisioning"
-1. Click "Run Workflow", select your branch, and tap the green button.
-1. Wait, and you should eventually see a green checkmark indicating the workflow succeeded.
+1. Click "Run Workflow", and tap the green button.
+1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
 
 ## Create Loop App in App Store Connect
 
-1. Go to the [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and create a New App.
+1. Go to the [apps list](https://appstoreconnect.apple.com/apps) on App Store Connect and click the blue "plus" icon to create a New App.
   * Select "iOS"
   * Select a name: this will have to be unique, so you may have to try a few different names here, but it will not be the name you see on your phone, so it's not that important.
   * Select your primary language
-  * Select the Bundle Id you created above.
+  * Choose the bundle ID that matches `com.TEAMID.loopkit.Loop`, with TEAMID matching your team id.
   * SKU can be anything; e.g. "123"
   * Select "Full Access"
   * Click Create
   * You do not need to fill out the next form. That is for submitting to the app store.
 
-1. At the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/bundleId/add/bundle) page, add a new app identifier.
-  * Description: Loop
-  * The Bundle ID will be explicit and in the form `com.TEAMID.loopkit.Loop`, where `TEAMID` is your the value you recorded above.
-  * For capabilities, check "App Groups, "HealthKit", "SiriKit", and "Time Sensitive Notifications"
-  * Then click "Continue", and "Register".
+## Create Building Certficates
 
-## GitHub Configuration Steps
+1. Go back to the "Actions" tab of your LoopWorkspace repository in github.
+1. Select "Create Certificates"
+1. Click "Run Workflow", and tap the green button.
+1. Wait, and within a minute or two you should see a green checkmark indicating the workflow succeeded.
+
+## Create App Group
+
+1. At the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/identifiers/bundleId/add/bundle) page, add a new app identifier.
 
 
 ## Build Loop!
